@@ -5,11 +5,11 @@ $(document).ready(function() {
 // capture click event on image
 // prevent new page from opening on click
     
-    var $img = $('<img>');
+    var $image = $('<img>');
     var $overlay = $('<div id="overlay"></div>');
     
     $('body').append($overlay);
-    $($overlay).append($img);
+    $($overlay).append($image);
     
     //Shows overlay when user clicks on image
     $('#imageGallery a').on('click', function(event) {
@@ -19,7 +19,7 @@ $(document).ready(function() {
         var location = $(this).attr('href');
         console.log(location);
         
-        $img.attr('src', location);
+        $image.attr('src', location);
         
         $($overlay).show();        
     })
