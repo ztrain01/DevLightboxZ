@@ -27,7 +27,7 @@ $(document).ready(function() {
     
     //Hides overlay when user clicks on it
     $($overlay).on('click', function(){
-        $($overlay).hide();
+        $(this).hide();
     });
 
 
